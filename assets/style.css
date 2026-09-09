@@ -1,0 +1,239 @@
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff8f5;
+    color: #4a3434;
+}
+
+
+
+
+.cabecalho {
+    display: flex;
+
+    /* obrigatório na atividade */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+
+    padding: 1.2rem 5%;
+    background-color: #f5a9b8;
+}
+
+
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #7d3c4c;
+}
+
+
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+
+.banner {
+    min-height: 50vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 2rem 5%;
+    background-color: #ffe4e9;
+}
+
+.banner h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.banner p {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.botao {
+    display: inline-block;
+
+    padding: 0.8rem 1.5rem;
+
+    background-color: #d95f7a;
+    color: white;
+
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #b94762;
+}
+
+
+.produtos {
+    display: grid;
+
+    /* celular = 1 coluna */
+    grid-template-columns: 1fr;
+
+    gap: 1.5rem;
+
+    padding: 2rem 0;
+}
+
+
+
+
+.produto {
+    background-color: white;
+
+    padding: 1.2rem;
+
+    border-radius: 0.8rem;
+
+    box-shadow: 0 4px 12px
+        rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+.produto img {
+    width: 100%;
+    height: auto;
+
+    border-radius: 0.6rem;
+}
+
+.produto h3 {
+    margin: 1rem 0;
+}
+
+.produto strong {
+    display: block;
+
+    margin: 1rem 0;
+
+    font-size: 1.3rem;
+
+    color: #d95f7a;
+}
+
+
+
+.produto button {
+    width: 100%;
+
+    padding: 0.8rem;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    background-color: #d95f7a;
+    color: white;
+
+    cursor: pointer;
+}
+
+.produto button:hover {
+    background-color: #b94762;
+}
+
+
+
+footer {
+    padding: 1.5rem 5%;
+
+    background-color: #4a3434;
+    color: white;
+
+    text-align: center;
+}
+
+
+
+@media (min-width: 768px) {
+
+ 
+
+    .cabecalho {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+
+
+    nav {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1.5rem;
+    }
+
+
+
+
+    .banner {
+        min-height: 60vh;
+    }
+
+    .banner h1 {
+        font-size: 3rem;
+    }
+
+
+
+    .produtos {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
+
+
+  
+
+    .produto button {
+        width: auto;
+        padding: 0.8rem 2rem;
+    }
+}
